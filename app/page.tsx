@@ -398,13 +398,14 @@ export default function Home() {
                 © {site.year} {site.name}
               </div>
               <div style={{ display: "flex", gap: "30px" }}>
-                {site.contact.socials.map((social, index) =>
-                  social.href ? (
+                {site.contact.socials.map((social, index) => {
+                  const isMailto = social.href?.startsWith("mailto:")
+                  return social.href ? (
                     <a
                       key={index}
                       href={social.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
+                      target={isMailto ? undefined : "_blank"}
+                      rel={isMailto ? undefined : "noopener noreferrer"}
                       style={{ color: "inherit", textDecoration: "none" }}
                     >
                       {social.name}
@@ -412,9 +413,9 @@ export default function Home() {
                   ) : (
                     <span key={index}>{social.name}</span>
                   )
-                )}
+                })}
               </div>
-              <div>LOCATED IN {site.contact.location}</div>
+              <div>{site.contact.location}</div>
             </div>
           </div>
         </footer>

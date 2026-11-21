@@ -695,16 +695,16 @@ export const site: SiteConfig = {
   },
   "contact": {
     "cta": "LET'S \u2014 WORK",
-    "email": "[EMAIL]",
-    "location": "[CITY]",
+    "email": "prathamparikh05@gmail.com",
+    "location": "BASED IN INDIA",
     "socials": [
       {
         "name": "INSTAGRAM",
-        "href": "[URL]"
+        "href": "https://www.instagram.com/pratham__parikh?fqnt=MXZqMWVxNGJodGpuaQ%3D%3D&utm_source=qr"
       },
       {
-        "name": "WHATSAPP",
-        "href": "[LINK]"
+        "name": "EMAIL",
+        "href": "mailto:prathamparikh05@gmail.com"
       },
       {
         "name": "BEHANCE",
