@@ -414,7 +414,7 @@ export default function Home() {
                   )
                 )}
               </div>
-              <div>LOCATED IN {site.contact.location}</div>
+              <div>India {site.contact.location}</div>
             </div>
           </div>
         </footer>
