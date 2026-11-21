@@ -25,7 +25,7 @@ export function IntroLoader() {
   const finishIntro = useCallback(() => {
     try {
       sessionStorage.setItem("intro-seen", "true")
-    } catch {}
+    } catch { }
     document.body.style.overflow = ""
     setShouldRender(false)
   }, [])
@@ -51,7 +51,7 @@ export function IntroLoader() {
         setShouldRender(false)
         return
       }
-    } catch {}
+    } catch { }
 
     // Lock scroll during intro
     const originalOverflow = document.body.style.overflow
@@ -119,7 +119,7 @@ export function IntroLoader() {
             <span className="pen-tip" aria-hidden="true" />
           </div>
           <span className="caption-word">
-            PHOTOGRAPHY
+            The Star
           </span>
         </div>
 
